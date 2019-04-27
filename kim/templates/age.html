@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>왑키네이터</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
   </head>
   <body>
     <div id="container">
@@ -12,14 +12,14 @@
       </div>
       <div id="content">
         <h2 style="margin-top:200px;">96년생 이상입니까?</h2>
-        <p><form class="" action="question4" method="post">
-          <input type="button" class="button" name=1 value="yes" onclick="location.href = 'major.html'">
-          <input type="button" class="button" name=0 value="no" onclick="location.href = 'major.html'">
+        <p><form class="" action="question5" method="post">
+          <input type="button" class="button" name=1 value="yes" onclick="location.href = '/question5'">
+          <input type="button" class="button" name=0 value="no" onclick="location.href = '/question5'">
           </form>
         </p>
       </div>
       <div id="sidebar">
-        <img src="아키네이터.jpg" width="100%">
+        <img src="{{url_for('static', filename='아키네이터.jpg')}}" width="100%">
       </div>
     </div>
   </body>

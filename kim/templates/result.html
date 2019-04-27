@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>왑키네이터</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <style media="screen">
       #jstext{
         font-size: 90px;
@@ -27,7 +27,7 @@
         </h2>
       </div>
       <div id="sidebar">
-        <img src="아키네이터.jpg" width="100%">
+        <img src="{{url_for('static', filename='아키네이터.jpg')}}" width="100%">
       </div>
     </div>
   </body>

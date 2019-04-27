@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>왑키네이터</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
   </head>
   <body>
     <div id="container">
@@ -12,14 +12,14 @@
       </div>
       <div id="content">
         <h2 style="margin-top:200px;">16학번 미만 화석입니까?</h2>
-        <p><form class="" action="question2" method="post">
-          <input type="button" class="button" name=1 value="yes" onclick="location.href = 'phase.html'">
-          <input type="button" class="button" name=0 value="no" onclick="location.href = 'phase.html'">
+        <p><form class="" action="question3" method="post">
+          <input type="button" class="button" name=1 value="yes" onclick="location.href = '/question3'">
+          <input type="button" class="button" name=0 value="no" onclick="location.href = '/question3'">
           </form>
         </p>
       </div>
       <div id="sidebar">
-        <img src="아키네이터.jpg" width="100%">
+        <img src="{{url_for('static', filename='아키네이터.jpg')}}" width="100%">
       </div>
     </div>
   </body>
