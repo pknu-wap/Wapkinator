@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>왑키네이터</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>왑키네이터</h1>
+      </div>
+      <div id="content">
+        <h2 style="margin-top:200px;">신입회원입니까?</h2>
+        <p><form class="" action="question1" method="post">
+          <input type="button" class="button" name=phase value="yes" onclick="location.href = '/question2'">
+          <input type="button" class="button" name=phase value="no" onclick="location.href = '/question2'">
+          </form>
+        </p>
+      </div>
+      <div id="sidebar">
+        <img src="{{url_for('static', filename='아키네이터.jpg')}}" width="100%">
+      </div>
+    </div>
+  </body>
+</html>
