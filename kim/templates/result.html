@@ -4,31 +4,19 @@
     <meta charset="utf-8">
     <title>왑키네이터</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <style media="screen">
-      #jstext{
-        font-size: 90px;
-        color: blue;
-      }
-    </style>
     <script>
       var name={{data|safe}};
     </script>
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <h1>왑키네이터</h1>
-      </div>
-      <div id="content">
-        <h2 style="margin-top:50px;">
-          <script>
+    <h1>왑키네이터</h1>
+    <div class="wrapper">
+      <div style="position: relative;">
+          <h2><script>
             document.write('제가 생각할 때는 <p id="jstext">' + name + '</p>입니다.')
-          </script>
-        </h2>
+          </script></h2>
       </div>
-      <div id="sidebar">
-        <img src="{{url_for('static', filename='아키네이터.jpg')}}" width="100%">
-      </div>
+      <div><img src="{{url_for('static', filename='akinator.jpg')}}"> </div>
     </div>
   </body>
 </html>

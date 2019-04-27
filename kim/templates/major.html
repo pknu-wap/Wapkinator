@@ -6,21 +6,18 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <h1>왑키네이터</h1>
+    <h1>왑키네이터</h1>
+    <div class="wrapper">
+      <div style="position: relative;">
+          <h2>
+            <p>컴공입니까?
+            <form action="question6" method="post">
+            <button name="bool" class="button" type="submit" value=1 onclick="/question6">네</button>
+            <button name="bool" class="button" type="submit" value=0 onclick="/question6">아니오</button>
+            </form>
+          </p></h2>
       </div>
-      <div id="content">
-        <h2 style="margin-top:200px;">컴공입니까?</h2>
-        <p><form class="" action="question6" method="post">
-          <button name="bool" class="button" type="submit" value=1 onclick="/question6">네</button>
-          <button name="bool" class="button" type="submit" value=0 onclick="/question6">아니오</button>
-          </form>
-        </p>
-      </div>
-      <div id="sidebar">
-        <img src="{{url_for('static', filename='아키네이터.jpg')}}" width="100%">
-      </div>
+      <div><img src="{{url_for('static', filename='akinator.jpg')}}"> </div>
     </div>
   </body>
 </html>
