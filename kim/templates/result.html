@@ -5,7 +5,7 @@
     <title>왑키네이터</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <script>
-      var name='홍길동';
+      var name={{data|safe}};
     </script>
   </head>
   <body>
