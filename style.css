@@ -1,0 +1,29 @@
+#container {
+    text-align: center;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+  }
+  #header {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  #content {
+    background-image: url("말풍선.jpg" );
+    width: 650px;
+    height: 610px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 400px;
+    float: left;
+    text-align: center;
+    padding-right: 80px;
+  }
+  #sidebar {
+    width: 600px;
+    padding: 30px;
+    padding-left: 0px;
+    padding-right:0px;
+    margin-bottom: 20px;
+    float: right;
+  }
