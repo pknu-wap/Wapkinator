@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+        <form name="SimpleForm">
+            <a href="javascript:Detail(true);">자세히>></a><br />
+        </form>
+
+        <form name="DetailForm">
+            <a href="javascript:Detail(false);">숨키기<<</a><br />
+            <br />
+            내용 내용 내용<br />
+        </form>
+    </div>
+
+    <script>
+        Detail(false);
+
+        function Detail(isShow) {
+            if (isShow)
+            {
+                SimpleForm.hidden = true;
+                DetailForm.hidden = false;
+            }
+            else
+            {
+                SimpleForm.hidden = false;
+                DetailForm.hidden = true;
+            }
+        }
+    </script>
+  </body>
+</html>

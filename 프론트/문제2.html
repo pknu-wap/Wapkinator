@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <title>회원 맞추기</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/quiz_style.css">
+</head>
+<body>
+  <h1><a href="index.html">동아리원 맞추기</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="index.html">메인 페이지</a></li>
+      <li><a href="랭킹.html">랭킹 보기</a></li>
+    </ol>
+    <div id="article">
+        <h2>누구일까요?</h2>
+        <p>
+          <img src="img\윤봉길.jpg" width="24%" alt="윤봉길이미지"><br>
+            정답: <input type="text" id="myText" value="입력하세요.">
+
+            <!-- 접고 펼치기 -->
+            <p>
+
+              <div>
+                  <form name="SimpleForm">
+                      <a href="javascript:Detail(true);">힌트보기</a><br />
+                  </form>
+
+                  <form name="DetailForm">
+                      <a href="javascript:Detail(false);">힌트닫기</a><br />
+                      <br />
+                      ㄹㅇ힌트가 필요합니까 닝겐?;;<br />
+                  </form>
+              </div>
+
+              <script>
+                  Detail(false);
+
+                  function Detail(isShow) {
+                      if (isShow)
+                      {
+                          SimpleForm.hidden = true;
+                          DetailForm.hidden = false;
+                      }
+                      else
+                      {
+                          SimpleForm.hidden = false;
+                          DetailForm.hidden = true;
+                      }
+                  }
+              </script>
+            </p>
+            <!-- 접고 펼치기 -->
+
+            <button onclick="myFunction()">정답확인</button>
+
+            <p id="demo"></p>
+
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myText").value;
+              if (x==="윤봉길") {
+                y = "맞았습니다."
+                document.getElementById("demo").innerHTML = y;
+              }
+              else {
+                y = "틀렸습니다."
+                document.getElementById("demo").innerHTML = y;
+              }
+            }
+            </script>
+        </p>
+      </div>
+  </div>
+    <div id="button">
+      <input type="button" name="이전문제" value="이전문제" onclick="location.href = '문제.html'">
+      <input type="button" name="다음문제" value="다음문제" style="position: absolute; right: 0;" onclick="location.href = '끝.html'">
+    </div>
+  </body>
+  </html>
