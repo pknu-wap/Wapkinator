@@ -5,7 +5,7 @@
     <title>왑키네이터</title>
     <style media="screen">
     .wrapper {
-      background-image: url("bubble.jpg" );
+      background-image: url({{url_for('static', filename = "../static/bubble.jpg")}});
       background-repeat:no-repeat;
       background-size:50% 100%;
       display: grid;
@@ -68,7 +68,11 @@
             </form>
           </p></h2>
       </div>
+<<<<<<< HEAD
+      <div><img src="{{url_for('static', filename='akinator.jpg')}}"> </div>
+=======
       <div><img src="{{url_for('static', filename='아키네이터.jpg')}}"> </div>
+>>>>>>> f4bcb72f3c45d7801ed2f2c0f104368168c77d4e
     </div>
   </body>
 </html>
